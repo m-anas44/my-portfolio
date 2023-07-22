@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import hero_img from '/public/assets/images/mypic6b.png';
 import Type from './type';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -27,9 +28,11 @@ const Hero = () => {
                         chambray.
                     </p>
                     <div className="flex justify-center">
+                        <Link href={'#Contact'}>
                         <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                            Button
+                            Contact
                         </button>
+                        </Link>
                         <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                             Button
                         </button>
