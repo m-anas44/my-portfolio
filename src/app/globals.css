@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-/* .custom-image {
+.custom-image {
   background-image: url("../../public/assets/images/hero-img.jpeg");
-} */
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
