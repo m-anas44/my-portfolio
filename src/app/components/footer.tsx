@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '/public/assets/images/logo-p.png'
+import Link from 'next/link';
 import Image from 'next/image'
+import { FaFacebook, FaGithub, FaInstagram, FaSnapchat } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div>
@@ -18,23 +20,32 @@ const Footer = () => {
                         © 2020 Muhammad Anas
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                        <a className="text-gray-500">
-                            
-                        </a>
-                        <a className="ml-3 text-gray-500">
-                            
-                        </a>
-                        <a className="ml-3 text-gray-500">
-                            
-                        </a>
-                        <a className="ml-3 text-gray-500">
-                            
-                        </a>
+                        <Link 
+                        target='_blank'
+                        href={'https://www.facebook.com/Istyle143'} 
+                        className="text-gray-500">
+                            <FaFacebook />
+                        </Link>
+                        <Link target='_blank'
+                        href={'https://www.instagram.com/m._.anas444/'}
+                        className="ml-3 text-gray-500">
+                            <FaInstagram />
+                        </Link>
+                        <Link target='_blank'
+                        href={'https://www.snapchat.com/add/anas226013?share_id=LkAuINKvrK4&locale=en-US'}
+                        className="ml-3 text-gray-500">
+                            <FaSnapchat/>
+                        </Link>
+                        <Link target='_blank'
+                        href={'https://github.com/m-anas44'}
+                        className="ml-3 text-gray-500">
+                            <FaGithub />
+                        </Link>
                     </span>
                 </div>
             </footer>
         </div>
-    )
-}
+    );
+};
 
 export default Footer;
