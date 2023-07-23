@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <section className="text-gray-600 body-font bg-fixed bg-cover bg-center custom-image">
+        <section className="text-gray-600 body-font bg-fixed bg-cover bg-center bg-opacity-90 custom-image">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                     <Image
@@ -21,7 +21,7 @@ const Hero = () => {
                         <br className="hidden lg:inline-block" />
                         <Type />
                     </h1>
-                    <p className="mb-8 leading-relaxed">
+                    <p className="mb-8 leading-relaxed font-sans font-semibold">
                         Creating Experience in computer sciences and other development
                         by the course presented by Presidential Initiative of Artificial
                         Intelligence and Computing -PIAIC- in University of

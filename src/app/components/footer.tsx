@@ -19,26 +19,26 @@ const Footer = () => {
                     <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
                     Copyright © 2023 Muhammad Anas
                     </p>
-                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start text-3xl">
                         <Link 
                         target='_blank'
                         href={'https://www.facebook.com/Istyle143'} 
-                        className="text-gray-500">
+                        className="text-gray-500 hover:text-blue-700">
                             <FaFacebook />
                         </Link>
                         <Link target='_blank'
                         href={'https://www.instagram.com/m._.anas444/'}
-                        className="ml-3 text-gray-500">
+                        className="ml-3 text-gray-500 hover:text-pink-600">
                             <FaInstagram />
                         </Link>
                         <Link target='_blank'
                         href={'https://www.snapchat.com/add/anas226013?share_id=LkAuINKvrK4&locale=en-US'}
-                        className="ml-3 text-gray-500">
+                        className="ml-3 text-gray-500 hover:text-yellow-700">
                             <FaSnapchat/>
                         </Link>
                         <Link target='_blank'
                         href={'https://github.com/m-anas44'}
-                        className="ml-3 text-gray-500">
+                        className="ml-3 text-gray-500 hover:text-gray-700">
                             <FaGithub />
                         </Link>
                     </span>
