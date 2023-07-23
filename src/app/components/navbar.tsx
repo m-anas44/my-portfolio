@@ -6,7 +6,7 @@ import logo from '/public/assets/images/logo-p.png'
 
 const Navbar = () => {
     return (
-        <div className='bg-green-200 z-50 sticky top-0'>
+        <div className='bg-slate-200 z-50 sticky top-0'>
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         </Link>
                     </nav>
                     <a href="/assets/my-cv/CV.pdf" target='_blank'>
-                        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0 font-sans font-semibold">
+                        <button className="text-white inline-flex items-center bg-neutral-800 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0 font-sans font-semibold">
                             Download CV
                             <FaDownload className="text-lg ml-2" />
                         </button>

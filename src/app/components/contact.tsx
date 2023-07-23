@@ -16,7 +16,7 @@ const Contact = () => {
         marginWidth={0}
         scrolling="no"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.356982196619!2d74.28386087481462!3d31.54181624608364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190346f698196d%3A0xc335ab9d1cfad7b8!2sHusnain%20DawaKhana!5e0!3m2!1sen!2s!4v1690048549686!5m2!1sen!2s"
-        style={{filter: "contrast(1.2) opacity(0.4)"}}
+        style={{filter: "contrast(1.2) opacity(0.7)"}}
       />
       <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
         <div className="lg:w-1/2 px-6">
