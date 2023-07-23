@@ -6,7 +6,7 @@ const Type = () => {
         <div>
             <Typewriter
                 options={{
-                    strings: ['Web Designer', 'UI/UX Designer'],
+                    strings: ['Web 2.0 Developer', 'UI/UX Designer'],
                     autoStart: true,
                     loop: true,
                 }}
