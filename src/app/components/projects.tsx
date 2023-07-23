@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import image_1 from '/public/assets/images/project1.png'
+import image_2 from '/public/assets/images/project2.png'
 import Link from 'next/link'
+import { BiLinkExternal } from 'react-icons/bi';
 const Project = () => {
+
   return (
     <div id='Projects'>
       <section className="text-gray-600 body-font">
@@ -35,7 +38,9 @@ const Project = () => {
                     Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
                   </p>
                   <p className='font-semibold text-sm mt-2 text-black'>
-                    <Link href={'https://github.com/m-anas44'}>Code on Github</Link>
+                    <Link href={'https://github.com/m-anas44'}>
+                      Code on Github<BiLinkExternal className="inline ml-1"/>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -45,7 +50,7 @@ const Project = () => {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={image_1}
+                  src={image_2}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-bold text-indigo-500 mb-1">
@@ -58,7 +63,10 @@ const Project = () => {
                     Personal Experience and Information presented by portfolio.
                   </p>
                   <p className='font-semibold text-sm mt-2 text-black'>
-                    <Link href={'https://github.com/m-anas44'}>Code on Github</Link>
+                    <Link href={'https://github.com/m-anas44'}>
+                      Code on Github
+                    <BiLinkExternal className="inline ml-1"/>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -82,7 +90,9 @@ const Project = () => {
                     microdosing tousled waistcoat.
                   </p>
                   <p className='font-semibold text-sm text-black mt-2'>
-                    <Link href={'https://github.com/m-anas44'}>Code on Github</Link>
+                    <Link href={'https://github.com/m-anas44'}>
+                      Code on Github <BiLinkExternal className="inline ml-1"/>
+                      </Link>
                   </p>
                 </div>
               </div>
