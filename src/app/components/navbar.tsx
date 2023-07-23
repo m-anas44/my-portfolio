@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div className='bg-green-200 z-50 sticky top-0'>
             <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                         <Image
                             src={logo}
@@ -21,7 +21,7 @@ const Navbar = () => {
                         <Link href={"#"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
                             Home
                         </Link>
-                        <Link href={"#"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                        <Link href={"#About"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
                             About
                         </Link>
                         <Link href={"#"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
