@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import about_img from '/public/assets/images/mypic5.png';
+import about_img from '/public/assets/images/mypic7b.jpeg';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Link from 'next/link';
 const About = () => {
