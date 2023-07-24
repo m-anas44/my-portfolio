@@ -6,7 +6,7 @@ import logo from '/public/assets/images/logo-p.png'
 
 const Navbar = () => {
     return (
-        <div className='bg-slate-200 z-50 sticky top-0'>
+        <div className='bg-green-300 z-50 sticky top-0'>
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -24,12 +24,13 @@ const Navbar = () => {
                         <Link href={"#About"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
                             About
                         </Link>
-                        <Link href={"#"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
-                            Skills
-                        </Link>
                         <Link href={"#Projects"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
                             Projects
                         </Link>
+                        <Link href={"#Skills"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                            Skills
+                        </Link>
+                        
                         <Link href={"#Contact"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
                             Contact
                         </Link>

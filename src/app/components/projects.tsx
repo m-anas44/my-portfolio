@@ -8,16 +8,19 @@ const Project = () => {
 
   return (
     <div id='Projects'>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="text-gray-600 body-font bg-slate-100">
+        <div className="container px-5 py-14 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
+            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-orange-500">
               My Projects
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Some initial projects to practicing and building experience in Next Js 13
               with tailwind CSS.
             </p>
+            <div className="flex mt-6 justify-center">
+                            <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
+                        </div>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 sm:w-1/2 p-4">
@@ -27,8 +30,8 @@ const Project = () => {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={image_1}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-bold text-indigo-500 mb-1">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-orange-300 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-bold text-orange-500 mb-1">
                     Project 1
                   </h2>
                   <h1 className="title-font text-lg text-gray-900 mb-2 font-bold">
@@ -52,8 +55,8 @@ const Project = () => {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={image_2}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-bold text-indigo-500 mb-1">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-orange-300 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-bold text-orange-500 mb-1">
                     Project 2
                   </h2>
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-2">
@@ -78,8 +81,8 @@ const Project = () => {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={image_1}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-bold text-indigo-500 mb-1">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-orange-300 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-bold text-orange-500 mb-1">
                     Project 3
                   </h2>
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-2">

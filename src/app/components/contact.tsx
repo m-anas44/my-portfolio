@@ -4,7 +4,19 @@ const Contact = () => {
   return (
     <div id='Contact'>
         <section className="text-gray-600 body-font relative">
-  <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div className='text-center'>
+        <h2 className="text-xs text-orange-500 tracking-widest font-bold title-font mb-1">
+                            Contact Me
+                        </h2>
+                        <h1 className="sm:text-3xl text-2xl font-bold  title-font text-gray-900">
+                            To Get Connected
+                        </h1>
+        </div>
+                        <div className="flex mt-6 justify-center">
+                            <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
+                        </div>
+  <div className="container px-5 py-14 mx-auto flex sm:flex-nowrap flex-wrap">
+    
     <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
       <iframe
         width="100%"
@@ -79,7 +91,7 @@ const Contact = () => {
           defaultValue={""}
         />
       </div>
-      <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+      <button className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg font-medium">
         Submit
       </button>
       <p className="text-xs text-gray-500 mt-3">
