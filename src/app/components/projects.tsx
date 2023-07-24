@@ -41,8 +41,8 @@ const Project = () => {
                     Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
                   </p>
                   <p className='font-semibold text-sm mt-2 text-black'>
-                    <Link href={'https://github.com/m-anas44'} target='_blank'>
-                      Code on Github<BiLinkExternal className="inline ml-1"/>
+                    <Link href={'https://muhammad-anas-ui.vercel.app'} target='_blank'>
+                      View Project<BiLinkExternal className="inline ml-1"/>
                     </Link>
                   </p>
                 </div>
