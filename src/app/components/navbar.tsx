@@ -1,49 +1,76 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 import { FaDownload } from 'react-icons/fa';
 import logo from '/public/assets/images/logo-p.png'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className='bg-green-300 z-50 sticky top-0 shadow-lg'>
-            <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <Image
-                            src={logo}
-                            alt='Logo'
-                            width={100}
-                            height={100}
-                        />
-                    </a>
-                    <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 font-bold flex flex-wrap items-center text-base justify-center">
-                        <Link href={"#"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+        <nav className='flex justify-between items-center flex-wrap text-white bg-green-300 shadow-lg sticky top-0 
+    z-50 px-8 lg:px-12 py-3'>
+
+            <Link href={"/"} className="flex flex-row items-center select-none lg:mr-60">
+                <Image
+                    src={logo}
+                    alt='Logo'
+                    width={110}
+                    height={110}
+                />
+            </Link>
+            <div className='block lg:hidden'>
+                <button type="button" onClick={() => { setIsOpen(!isOpen) }}>
+                    <AiOutlineMenu className={`fill-current text-[32px] border-2 border-black rounded-md p-1 text-black ${isOpen ? "hidden" : "block"}`} />
+                    <AiOutlineClose className={`fill-current text-[32px] border-2 border-black rounded-md p-1 text-black ${isOpen ? "block" : "hidden"}`} />
+                </button>
+            </div>
+            {/* LINKS to show and hide font-bold text-red-500  */}
+            <div className={`block flex-grow justify-between lg:flex lg:items-center 
+      lg:w-auto w-full text-white
+       ${isOpen ? "flex flex-col bg-green-900 opacity-80 rounded-lg mt-5" : "hidden"}`}>
+
+                <ul className="text-sm m-3 lg:m-0 text-center lg:items-center lg:flex gap-x-4 gap-y-3">
+                    <li>
+                        <Link href={"#"} className='block lg:inline-block text-lg p-3 bg-black lg:bg-green-300 lg:text-black rounded-lg'>
                             Home
                         </Link>
-                        <Link href={"#About"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                    </li>
+                    <li>
+                        <Link href={"#About"} className='block lg:inline-block text-lg p-3 bg-black lg:bg-green-300 lg:text-black rounded-lg'>
                             About
                         </Link>
-                        <Link href={"#Projects"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                    </li>
+                    <li>
+                        <Link href={"#Projects"} className='block lg:inline-block text-lg p-3 bg-black lg:bg-green-300 lg:text-black rounded-lg'>
                             Projects
                         </Link>
-                        <Link href={"#Skills"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                    </li>
+                    <li>
+                        <Link href={"#Skills"} className='block lg:inline-block text-lg p-3 bg-black lg:bg-green-300 lg:text-black rounded-lg'>
                             Skills
                         </Link>
-                        
-                        <Link href={"#Contact"} className="mr-7 hover:border-b-2 border-black hover:text-gray-900">
+                    </li>
+                    <li>
+                        <Link href={"#Contact"} className='block lg:inline-block text-lg p-3 bg-black lg:bg-green-300 lg:text-black rounded-lg'>
                             Contact
                         </Link>
-                    </nav>
-                    <a href="/assets/my-cv/CV.pdf" target='_blank'>
-                        <button className="text-white inline-flex items-center bg-neutral-800 border-0 py-1 px-3 focus:outline-none hover:bg-black hover:text-white rounded text-base mt-4 md:mt-0 font-sans font-semibold">
-                            Download CV
-                            <FaDownload className="text-lg ml-2" />
-                        </button>
-                    </a>
-                </div>
-            </header>
-        </div>
+                    </li>
+                </ul>
+
+                {/* Download Button*/}
+
+
+                <a href="/assets/my-cv/CV.pdf" target='_blank' className={`${isOpen ? "p-[12px] w-full" : "block"}`}>
+                    <button className="flex justify-center items-center w-full border-2 border-black py-2 px-3 
+                    focus:outline-none text-black rounded-lg font-sans bg-white lg:bg-black lg:text-white font-bold">
+                        Download CV &nbsp;
+                        <FaDownload className="text-lg inline-block" />
+                    </button>
+                </a>
+            </div>
+        </nav>
     )
 }
 
